@@ -31,15 +31,18 @@ private var snap = false;
 private var controller : ThirdPersonController;
 private var targetHeight = 100000.0; 
 
+
 function Awake ()
 {
+
+	
 	if(!cameraTransform && Camera.main)
 		cameraTransform = Camera.main.transform;
 	if(!cameraTransform) {
 		Debug.Log("Please assign a camera to the ThirdPersonCamera script.");
 		enabled = false;	
 	}
-			
+		
 		
 	_target = transform;
 	if (_target)
@@ -56,7 +59,6 @@ function Awake ()
 	}
 	else
 		Debug.Log("Please assign a target to the camera that has a ThirdPersonController script attached.");
-
 	
 	Cut(_target, centerOffset);
 }

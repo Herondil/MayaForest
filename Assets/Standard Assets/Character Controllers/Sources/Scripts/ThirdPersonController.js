@@ -90,6 +90,7 @@ private var lastGroundedTime = 0.0;
 
 private var isControllable = true;
 
+/*
 function Awake ()
 {
 	moveDirection = transform.TransformDirection(Vector3.forward);
@@ -104,6 +105,7 @@ public var walkAnimation : AnimationClip;
 public var runAnimation : AnimationClip;
 public var jumpPoseAnimation : AnimationClip;	
 	*/
+	/*
 	if(!idleAnimation) {
 		_animation = null;
 		Debug.Log("No idle animation found. Turning off animations.");
@@ -121,7 +123,7 @@ public var jumpPoseAnimation : AnimationClip;
 		Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
 	}
 			
-}
+}*/
 
 
 function UpdateSmoothedMovementDirection ()
